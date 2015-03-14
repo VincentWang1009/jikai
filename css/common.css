@@ -1,0 +1,12 @@
+.mainContainer{
+    width: 990px;
+    margin: 0 auto;
+}
+
+.leftBlock{
+    width: 228px;
+    float: left;
+}
+.rightBlock{
+    margin-left: 328px;
+}
