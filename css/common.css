@@ -10,3 +10,179 @@
 .rightBlock{
     margin-left: 328px;
 }
+.jikai-header{
+    height: 90px;
+}
+.jikai-header .logoImg{
+    float:left;
+    margin-top:20px;
+    border:none;
+}
+.jikai-header .searchContain{
+    float: right;
+}
+.jikai-header .language{
+    float: right;
+    margin-top:37px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+}
+.jikai-header .lanItem{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #999;
+}
+.jikai-header .lanItem:hover{
+    color: #7d0402;
+}
+.jikai-header .lanItem.active{
+    color: #7d0402;
+}
+.jikai-header .searchInput{
+    width: 197px;
+    padding: 4px 10px;
+    border-radius: 14px;
+    outline: none;
+    margin-top: 36px;
+    border: 1px solid #CCC;
+    box-shadow: inset 0 2px 1px #EAEAEA;
+    background-image: url(../img/searchbg1.png);
+    background-repeat: no-repeat;
+    background-position: 195px center;
+}
+.jikai-header .searchInput.active{
+    background-image: url(../img/searchbg2.png);
+}
+
+.jikai-nav{
+    height: 48px;
+    line-height: 48px;
+    background-color: #333;
+    font-family: 'microsoft yahei';
+}
+.jikai-nav .navList{
+    overflow: hidden;
+}
+.jikai-nav .navListItem{
+    border-right: 1px solid #555;
+    font-size: 19px;
+    width:118px;
+    float:left;
+}
+.jikai-nav .navListItem.firstItem{
+    border-left: 1px solid #555;
+}
+.jikai-nav .navListItem a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+}
+.jikai-nav .navListItem a.active{
+    background-image: url(../img/navbg.png);
+}
+.jikai-nav .navListItem a:hover{
+    background-image: url(../img/navbg.png);
+}
+
+.jikai-commonInfo {
+    font-family: "microsoft yahei";
+}
+.jikai-backtop{
+    width: 38px;
+    height: 92px;
+    background-color: #dbdbdb;
+    position: fixed;
+    right:20px;
+    bottom:30px;text-align: center;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #666;
+    display: none;
+}
+.jikai-backtop a{
+    color: #666;
+    text-decoration: none;
+}
+.jikai-backtop:hover{
+    background-color: #efefef;
+}
+.jikai-backtop:hover .backmsg{
+    background-image: url(../img/backmsg2.png);
+    color: #7d0402;
+}
+.jikai-backtop:hover .backmsg a{
+    color: #7d0402;
+}
+.jikai-backtop:hover .backtop{
+    background-image: url(../img/backtop2.png);
+    color: #7d0402;
+}
+
+.jikai-backtop .backmsg{
+    background-image: url(../img/backmsg1.png);
+    background-repeat: no-repeat;
+    padding-top: 28px;
+    background-position: 8px 6px;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.jikai-backtop .backtop{
+    background-image: url(../img/backtop1.png);
+    background-repeat: no-repeat;
+    padding-top: 28px;
+    background-position: 8px 6px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.jikai-footer{
+    background-color: #020202;
+    overflow: hidden;
+    color: #999999;
+    height: 50px;
+    line-height: 50px;
+}
+.jikai-footer a{
+    color: #999999;
+    text-decoration: none;
+}
+.jikai-footer .cp{
+    float:left;
+    font-size: 15px;
+}
+.jikai-footer .contact{
+    float:right;
+    font-size: 16px;
+}
+
+.jikai-leftNav{
+    height: 217px;
+    background-image: url(../img/leftnavbg-fuwuzhinan.png);
+    background-repeat: no-repeat;
+    border:1px solid #ddd;
+    font-family: 'microsoft yahei';
+    background-position: 106px;
+}
+.jikai-leftNav .navlistitem{
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid #ddd;
+}
+.jikai-leftNav .navlistitem a{
+    text-decoration: none;
+    color:#333;
+    font-size: 16px;
+    display: block;
+    padding-left: 30px;
+    opacity: 0.8;
+}
+.jikai-leftNav .navlistitem a.active{
+    background-image: url(../img/leftnavlibg.png);
+    color:#fff;
+}
+.jikai-leftNav .navlistitem a:hover{
+    background-image: url(../img/leftnavlibg.png);
+    color:#fff;
+}

@@ -1,0 +1,58 @@
+
+.jikai-mainContent{
+    overflow: hidden;
+}
+
+.jikai-leftDesc{
+    margin-top:100px
+}
+.jikai-leftDesc .firstImg{
+    margin-bottom:30px
+}
+.jikai-introimg{
+    margin-bottom: 42px;
+}
+.jikai-introimg{
+    height: 160px;
+    background-image: url(../img/introimg-guanyujikai.png);
+    background-position: center center;
+}
+.rightBlock{
+    background-image: url(../img/rightbg-guanyujikai.png);
+    background-repeat: no-repeat;
+    height: 780px;
+    background-position: 0px 405px;
+}
+.jikai-commonInfo{
+    font-family: "microsoft yahei";
+}
+.jikai-commonInfo .infoTitle{
+    background-image: url(../img/jikaiinfo.jpg);
+    background-repeat: no-repeat;
+    color: #333;
+    padding-left: 67px;
+    font-size: 16px;
+    margin-top: 17px;
+    padding-top: 4px;
+}
+.jikai-commonInfo.info2 .infoTitle{
+    background-image: url(../img/infoimg2.png);
+    height: 20px;
+}
+.jikai-commonInfo .infoSubTitle{
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.jikai-commonInfo .infoContent{
+    margin-top: 12px;
+    font-size: 14px;
+}
+.jikai-commonInfo .infoContent p{
+    margin-top: 22px;
+    max-width: 420px;
+    color: #333;
+}
+.jikai-zhedieContainer{
+    margin-top: 22px;
+}

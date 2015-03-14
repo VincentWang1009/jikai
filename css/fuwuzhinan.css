@@ -1,0 +1,92 @@
+
+.jikai-mainContent{
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.jikai-leftDesc{
+    margin-top:100px
+}
+.jikai-leftDesc .firstImg{
+    margin-bottom:30px
+}
+.jikai-introimg{
+    margin-bottom: 42px;
+}
+.jikai-introimg{
+    height: 160px;
+    background-image: url(../img/introimg-fuwuzhinan.png);
+    background-position: center center;
+}
+.jikai-commonInfo .infoTitle{
+    background-image: url(../img/jikaiinfo.jpg);
+    background-repeat: no-repeat;
+    font-family: "microsoft yahei";
+    color: #333;
+    padding-left: 67px;
+    font-size: 16px;
+    margin-top: 17px;
+    padding-top: 4px;
+}
+.jikai-commonInfo .infoSubTitle{
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.jikai-commonInfo .infoContent{
+    margin-top: 12px;
+    font-size: 14px;
+}
+.jikai-zhedieContainer{
+    margin-top: 22px;
+}
+.jikai-zhedie{
+    border:1px solid #dbdbdb;
+    margin-bottom: 5px;
+}
+.jikai-zhedie .zhedieTitle{
+    height: 37px;
+    padding-left: 10px;
+    border-left: 3px solid #666;
+    border-bottom:1px solid #dbdbdb;
+    line-height: 37px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.jikai-zhedie .zhedieTitle:hover{
+    background-color: #f4fbff;
+
+}
+.jikai-zhedie .zhedieContent{
+    padding: 12px;
+    font-size: 12px;
+}
+.jikai-zhedie .zhedieContent .contentTitle{
+    margin-bottom: 7px;
+}
+.jikai-zhedie .zhedieContent .contentListItem{
+    margin-bottom: 7px;
+    padding-left: 12px;
+}
+.jikai-zhedie .zhedieContent .bottomLink{
+    margin-top:13px;
+    overflow: hidden;
+}
+.jikai-zhedie .zhedieContent .bottomLink a{
+    text-decoration: none;
+    color: #3b639f;
+}
+.jikai-zhedie .zhedieContent .leftLink{
+    float: left;
+}
+.jikai-zhedie .zhedieContent .rightLink{
+    float:right;
+}
+.jikai-zhedie .zhedieContent .rightLink.download{
+    background-image: url(../img/zhediedownload.png);
+    padding-left: 21px;
+    background-repeat: no-repeat;
+}
+
+
