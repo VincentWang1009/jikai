@@ -70,3 +70,23 @@
 .jikai-companyInfo .companyLine .companyLineRight{
     float:left;
 }
+
+.jikai-ditu{
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ededed;
+}
+#innerDitu{
+    height:338px;
+}
+.jikai-dayinditu{
+    margin-top:25px;
+    background: url(../img/dayinditu.png) no-repeat;
+    padding-left:30px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+}
+.jikai-dayinditu a{
+    text-decoration: none;
+    color: #3b639f;
+}
