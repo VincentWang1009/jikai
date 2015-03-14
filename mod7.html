@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+
+	<style>
+		/*模块样式 最后复制到页面的总体样式中*/
+		.jikai-header{
+			height: 90px;	
+		}
+		.jikai-header .logoImg{
+			float:left;
+			margin-top:20px;
+			border:none;
+		}
+		.jikai-header .searchContain{
+			float: right;
+		}
+		.jikai-header .language{
+			float: right;
+			margin-top:37px;
+		}
+		.jikai-header .lanItem{
+			margin: 0 10px;
+			text-decoration: none;
+			color: #999;
+		}
+		.jikai-header .lanItem:hover{
+			color: #7d0402;
+		}
+		.jikai-header .lanItem.active{
+			color: #7d0402;
+		}
+		.jikai-header .searchInput{
+			width: 197px;
+			padding: 4px 10px;
+			border-radius: 14px;
+			outline: none;
+			margin-top: 34px;
+			border: 1px solid #CCC;
+			box-shadow: inset 0 2px 1px #EAEAEA;
+			background-image: url(img/searchbg1.png);
+			background-repeat: no-repeat;
+			background-position: 195px center;
+		}
+		.jikai-header .searchInput.active{
+			background-image: url(img/searchbg2.png);
+		}
+
+		.jikai-nav{
+			height: 48px;
+			line-height: 48px;
+			background-color: #333;
+			font-family: 'microsoft yahei';
+		}
+		.jikai-nav .navList{
+			overflow: hidden;
+		}
+		.jikai-nav .navListItem{
+			border-right: 1px solid #555;
+			font-size: 19px;
+			width:118px;
+			float:left;
+		}
+		.jikai-nav .navListItem.firstItem{
+			border-left: 1px solid #555;
+		}
+		.jikai-nav .navListItem a{
+			display: block;
+			text-align: center;
+			text-decoration: none;
+			color:#fff;
+		}
+		.jikai-nav .navListItem a.active{
+			background-image: url(img/navbg.png);
+		}
+		.jikai-nav .navListItem a:hover{
+			background-image: url(img/navbg.png);
+		}
+
+		.jikai-mainContent{
+			overflow: hidden;
+		}
+		.jikai-leftNav{
+			height: 217px;
+			background-image: url(img/leftnavbg-fuwuzhinan.png);
+			background-repeat: no-repeat;
+			border:1px solid #ddd;
+			font-family: 'microsoft yahei';
+			background-position: 106px;
+		}
+		.jikai-leftNav .navlistitem{
+			height: 52px;
+			line-height: 52px;
+			border-bottom: 1px solid #ddd;
+		}
+		.jikai-leftNav .navlistitem a{
+			text-decoration: none;
+			color:#333;
+			font-size: 16px;
+			display: block;
+			padding-left: 30px;
+		}
+		.jikai-leftNav .navlistitem a.active{
+			background-image: url(img/leftnavlibg.png);
+			color:#fff;
+		}
+		.jikai-leftNav .navlistitem a:hover{
+			background-image: url(img/leftnavlibg.png);
+			color:#fff;
+		}
+
+		.jikai-leftDesc{
+			margin-top:100px
+		}
+		.jikai-leftDesc .firstImg{
+			margin-bottom:30px
+		}
+
+		.jikai-commonInfo .infoTitle{
+			background-image: url(img/jikaiinfo.jpg);
+			background-repeat: no-repeat;
+			font-family: "microsoft yahei";
+			color: #333;
+			padding-left: 67px;
+			font-size: 16px;
+			margin-top: 17px;
+			padding-top: 4px;
+		}
+		.jikai-commonInfo .infoSubTitle{
+			font-size: 14px;
+			color: #666;
+			margin-top: 10px;
+		}
+		.jikai-commonInfo .infoContent{
+			margin-top: 12px;
+			font-size: 14px;
+		}
+		.jikai-zhedieContainer{
+			margin-top: 22px;
+		}
+		.jikai-zhedie{
+			border:1px solid #dbdbdb;
+			margin-bottom: 5px;
+		}
+		.jikai-zhedie .zhedieTitle{
+			height: 37px;
+			padding-left: 10px;
+			border-left: 3px solid #666;
+			border-bottom:1px solid #dbdbdb;
+			line-height: 37px;
+			font-weight: bold;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.jikai-zhedie .zhedieTitle:hover{
+			background-color: #f4fbff;
+
+		}
+		.jikai-zhedie .zhedieContent{
+			padding: 12px;
+			font-size: 12px;
+		}
+		.jikai-zhedie .zhedieContent .contentTitle{
+			margin-bottom: 7px;
+		}
+		.jikai-zhedie .zhedieContent .contentListItem{
+			margin-bottom: 7px;
+			padding-left: 12px;
+		}
+		.jikai-zhedie .zhedieContent .bottomLink{
+			margin-top:13px;
+			overflow: hidden;
+		}
+		.jikai-zhedie .zhedieContent .bottomLink a{
+			text-decoration: none;
+			color: #3b639f;
+		}
+		.jikai-zhedie .zhedieContent .leftLink{
+			float: left;
+		}
+		.jikai-zhedie .zhedieContent .rightLink{
+			float:right;
+		}
+		.jikai-zhedie .zhedieContent .rightLink.download{
+			background-image: url(img/zhediedownload.png);
+			padding-left: 21px;
+			background-repeat: no-repeat;
+		}
+
+		.jikai-backtop{
+			width: 38px;
+			height: 92px;
+			background-color: #dbdbdb;
+			position: fixed;
+			right:20px;
+			bottom:30px;text-align: center;
+			border-radius: 2px;
+			font-size: 12px;
+			color: #666;
+			display: none;
+		}
+		.jikai-backtop a{
+			color: #666;
+			text-decoration: none;
+		}
+		.jikai-backtop:hover{
+			background-color: #efefef;
+		}
+		.jikai-backtop:hover .backmsg{
+			background-image: url(img/backmsg2.png);
+			color: #7d0402;
+		}
+		.jikai-backtop:hover .backmsg a{
+			color: #7d0402;
+		}
+		.jikai-backtop:hover .backtop{
+			background-image: url(img/backtop2.png);
+			color: #7d0402;
+		}
+
+		.jikai-backtop .backmsg{
+			background-image: url(img/backmsg1.png);
+			background-repeat: no-repeat;
+			padding-top: 28px;
+			background-position: 8px 6px;
+			border-bottom: 1px solid #dbdbdb;
+			padding-bottom: 5px;
+			cursor: pointer;
+
+		}
+		.jikai-backtop .backtop{
+			background-image: url(img/backtop1.png);
+			background-repeat: no-repeat;
+			padding-top: 28px;
+			background-position: 8px 6px;
+			padding-bottom: 5px;
+			cursor: pointer;
+		}
+
+		.jikai-footer{
+			background-color: #020202;
+			overflow: hidden;
+			color: #999999;
+			height: 50px;
+			line-height: 50px;
+		}
+		.jikai-footer a{
+			color: #999999;
+			text-decoration: none;
+		}
+		.jikai-footer .cp{
+			float:left;
+			font-size: 15px;
+		}
+		.jikai-footer .contact{
+			float:right;
+			font-size: 16px;
+		}
+	</style>
+	<script src="js/lib/jquery-1.8.0.min.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/zhedie.js"></script>
+	<script src="js/backtop.js"></script>
+</head>
+<body>
+<div class="jikai-header">
+	<div class="mainContainer">
+		<a href="/">
+			<img src="img/logo.png" alt="" class="logoImg"/>
+		</a>
+		<div class="searchContain">
+			<form action="">
+				<input type="text" class="searchInput" placeholder="查找内容"/>
+			</form>
+		</div>
+		<div class="language">
+			<a href="" class="lanItem">English</a>
+			<a href="" class="lanItem">中文</a>
+			<a href="" class="lanItem">日语</a>
+		</div>
+	</div>
+</div>
+<div class="jikai-nav">
+	<div class="mainContainer">
+		<ul class="navList">
+			<li class="firstItem navListItem"><a href="#">首页</a></li>
+			<li class="navListItem"><a href="#" class="active">关于纪凯</a></li>
+			<li class="navListItem"><a href="#">组织与团队</a></li>
+			<li class="navListItem"><a href="#">知识与信息</a></li>
+			<li class="navListItem"><a href="#">服务指南</a></li>
+			<li class="navListItem"><a href="#">联络与访问</a></li>
+			<li class="navListItem"><a href="#">招贤纳士</a></li>
+			<li class="navListItem"><a href="#">留言栏</a></li>
+		</ul>
+	</div>
+</div>
+<div class="jikai-introimg">
+</div>
+<div class="jikai-mainContent">
+	<div class="mainContainer">
+		<div class="leftBlock">
+			<div class="jikai-leftNav">
+				<ul class="navList">
+					<li class="navlistitem"><a href="" class="active">服务指南</a></li>
+					<li class="navlistitem"><a href="">常见问题解答</a></li>
+				</ul>
+			</div>
+			<div class="jikai-leftDesc">
+				<img src="img/leftdesc1-fuwuzhinan.png" alt="" class="firstImg"/>
+				<img src="img/leftdesc2-fuwuzhinan.png" alt=""/>
+			</div>
+		</div>
+		<div class="rightBlock">
+			<div class="jikai-commonInfo">
+				<div class="infoTitle">
+						知识产权申请指南
+				</div>
+				<div class="infoSubTitle">
+					纪凯提供全方位知识产权法律服务,致力于成为世界级优秀知识产权事务所
+				</div>
+				<div class="infoContent">
+					我公司主要合伙人具有丰富的国内外知识产权法经验。公司成立后，先后由国家工商行政
+					管理局和国家知识产权局指定为涉外商标和专利代理机构。
+				</div>
+			</div>
+
+			<div class="jikai-zhedieContainer">
+				<div class="jikai-zhedie">
+					<div class="zhedieTitle">
+						申请中国专利指南
+					</div>
+					<div class="zhedieContent">
+						<div class="contentTitle">
+							一．申请发明专利应提供的文件和信息
+						</div>
+						<ol class="contentList">
+							<li class="contentListItem">1.发明专利申请文件 (包括说明书、权利要求书、附图、及摘要)；</li>
+							<li class="contentListItem">2.申请人在指示函中应提供以下信息：发明名称，申请人姓名及地址，居民身份证件号码或组织机构代码，发明
+								人姓名及地址，第一发明人身份证号码（如果是中国国籍）。如果要求优先权，则包括优先权日、优先权号和</li>
+						</ol>
+						<div class="bottomLink">
+							<div class="leftLink">
+								<a href="">
+									查看更多>>
+								</a>
+							</div>
+							<div class="rightLink download">
+								<a href="">
+									下载PDF文件
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jikai-zhedie">
+					<div class="zhedieTitle">
+						申请中国专利指南
+					</div>
+					<div class="zhedieContent">
+						<div class="contentTitle">
+							一．申请发明专利应提供的文件和信息
+						</div>
+						<ol class="contentList">
+							<li class="contentListItem">1.发明专利申请文件 (包括说明书、权利要求书、附图、及摘要)；</li>
+							<li class="contentListItem">2.申请人在指示函中应提供以下信息：发明名称，申请人姓名及地址，居民身份证件号码或组织机构代码，发明
+								人姓名及地址，第一发明人身份证号码（如果是中国国籍）。如果要求优先权，则包括优先权日、优先权号和</li>
+						</ol>
+						<div class="bottomLink">
+							<div class="leftLink">
+								<a href="">
+									查看更多>>
+								</a>
+							</div>
+							<div class="rightLink download">
+								<a href="">
+									下载PDF文件
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="jikai-zhedie">
+					<div class="zhedieTitle">
+						申请中国专利指南
+					</div>
+					<div class="zhedieContent">
+						<div class="contentTitle">
+							一．申请发明专利应提供的文件和信息
+						</div>
+						<ol class="contentList">
+							<li class="contentListItem">1.发明专利申请文件 (包括说明书、权利要求书、附图、及摘要)；</li>
+							<li class="contentListItem">2.申请人在指示函中应提供以下信息：发明名称，申请人姓名及地址，居民身份证件号码或组织机构代码，发明
+								人姓名及地址，第一发明人身份证号码（如果是中国国籍）。如果要求优先权，则包括优先权日、优先权号和</li>
+						</ol>
+						<div class="bottomLink">
+							<div class="leftLink">
+								<a href="">
+									查看更多>>
+								</a>
+							</div>
+							<div class="rightLink download">
+								<a href="">
+									下载PDF文件
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="jikai-footer">
+	<div class="mainContainer">
+		<div class="cp">
+			Copyright © 2013 JEEKAI.COM. All rights reserved.
+		</div>
+		<div class="contact">
+			<a href="">
+				联络与访问
+			</a>
+		</div>
+	</div>
+</div>
+<div class="jikai-backtop">
+	<div class="backmsg">
+		<a href="">
+			留言
+		</a>
+	</div>
+	<div class="backtop">
+		反顶
+	</div>
+</div>
+</body>
+</html>
